@@ -21,3 +21,13 @@ exports.hexToRgb = function(hex) {
   return [red, green, blue];
 
 };
+
+exports.toCentrigrade = function(fehrenheit) {
+  var cent =(fehrenheit - 32) * .5556
+  return Math.round(cent*10)/ 10;
+}
+
+exports.toFehrenheit = function(centigrade) {
+  var feh = (centigrade * 1.8) + 32
+  return feh;
+}

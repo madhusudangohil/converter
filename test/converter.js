@@ -25,3 +25,22 @@ describe("Color code converter", function(){
         });
     } );
 });
+
+
+describe("Temperature converter", function(){
+    describe("Feh to Cent", function(){
+      it("converts fehranhite to centigrade", function(){
+          var cent = converter.toCentrigrade(100);
+          expect(cent).to.equal(37.8);
+      });
+    });
+
+    describe("Cent to Feh", function(){
+      it("converts centigrade to fehranhite", function(){
+          var feh = converter.toFehrenheit(38);
+          expect(feh).to.equal(100.4);
+      });
+    });
+
+
+});
